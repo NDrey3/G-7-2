@@ -67,9 +67,9 @@
         Преимущества Gazprom Pay
       </h2>
       <div class="container">
-        <ul class="advantages__main-list">
+        <ul class="advantages__main-list advantages__main-list--grid">
           <li class="advantages__main-item">
-            <div class="card-advantages card-advantages--heavenly">
+            <div class="card-advantages card-advantages--heavenly card-advantages--small">
               <div class="card-advantages__picture">
                 <picture>
                   <source media="(max-width: 1023px)"
@@ -228,7 +228,12 @@
         <ul class="payment__list">
           <li class="payment__item">
             <div class="payment__picture">
-              <img class="payment__image" src="images/logo-fns-desktop.png" width="286" height="326" alt="Логотип ФНС">
+              <picture>
+                <source media="(max-width: 1023px)"
+                  srcset="./images/logo-fns-tablet.png 1x, ./images/logo-fns-tablet@2x.png 2x">
+                <img class="payment__image" src="./images/logo-fns-desktop.png"
+                  srcset="./images/logo-fns-desktop@2x.png 2x" width="286" height="326" alt="Логотип ФНС">
+              </picture>
             </div>
             <h3 class="payment__heading">
               ФНС
@@ -239,8 +244,12 @@
           </li>
           <li class="payment__item">
             <div class="payment__picture">
-              <img class="payment__image" src="images/logo-sogaz-desktop.png" width="286" height="326"
-                alt="Логотип СОГАЗ">
+              <picture>
+                <source media="(max-width: 1023px)"
+                  srcset="./images/logo-sogaz-tablet.png 1x, ./images/logo-sogaz-tablet@2x.png 2x">
+                <img class="payment__image" src="./images/logo-sogaz-desktop.png"
+                  srcset="./images/logo-sogaz-desktop@2x.png 2x" width="286" height="326" alt="Логотип СОГАЗ">
+              </picture>
             </div>
             <h3 class="payment__heading">
               СОГАЗ
@@ -251,8 +260,12 @@
           </li>
           <li class="payment__item">
             <div class="payment__picture">
-              <img class="payment__image" src="images/logo-ntv-plus-desktop.png" width="286" height="326"
-                alt="Логотип НТВ-ПЛЮС">
+              <picture>
+                <source media="(max-width: 1023px)"
+                  srcset="./images/logo-ntv-plus-tablet.png 1x, ./images/logo-ntv-plus-tablet@2x.png 2x">
+                <img class="payment__image" src="./images/logo-ntv-plus-desktop.png"
+                  srcset="./images/logo-ntv-plus-desktop@2x.png 2x" width="286" height="326" alt="Логотип НТВ-ПЛЮС">
+              </picture>
             </div>
             <h3 class="payment__heading">
               НТВ-ПЛЮС
@@ -263,8 +276,13 @@
           </li>
           <li class="payment__item">
             <div class="payment__picture">
-              <img class="payment__image" src="images/logo-state-services-desktop.png" width="286" height="326"
-                alt="Логотип Госуслуг">
+              <picture>
+                <source media="(max-width: 1023px)"
+                  srcset="./images/logo-state-services-tablet.png 1x, ./images/logo-state-services-tablet@2x.png 2x">
+                <img class="payment__image" src="./images/logo-state-services-desktop.png"
+                  srcset="./images/logo-state-services-desktop@2x.png 2x" width="286" height="326"
+                  alt="Логотип Госуслуг">
+              </picture>
             </div>
             <h3 class="payment__heading">
               Госуслуги

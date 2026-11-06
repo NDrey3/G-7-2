@@ -377,6 +377,11 @@ a {
   margin: 0 auto;
   padding: 0 100px;
 }
+@media (max-width: 1023px) {
+  .container {
+    padding: 0 30px;
+  }
+}
 
 .visually-hidden {
   position: absolute;
@@ -414,8 +419,24 @@ a {
        column-gap: 20px;
   padding: 5px;
 }
+@media (max-width: 1023px) {
+  .header__box {
+    border: none;
+    margin: 0;
+  }
+}
 .header__btn {
   width: 128px;
+}
+@media (max-width: 1023px) {
+  .header__btn {
+    width: auto;
+  }
+}
+@media (max-width: 1023px) {
+  .header__btn--active {
+    display: none;
+  }
 }
 .header__language-link {
   outline: none;
@@ -426,6 +447,11 @@ a {
   border: 1px solid #DBDFEC;
   border-radius: 12px;
   padding: 17px 22px 17px 21px;
+}
+@media (max-width: 1023px) {
+  .header__language-link {
+    display: none;
+  }
 }
 
 .btn {
@@ -443,17 +469,31 @@ a {
   cursor: pointer;
 }
 .btn--second {
-  padding: 18px;
+  padding: 18px 32px;
   font-size: 15px;
   line-height: 20px;
   background-color: #476BF0;
 }
+@media (max-width: 1023px) {
+  .btn--second {
+    padding: 16px 32px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
 .btn--third {
   color: #1E222E;
-  padding: 14px;
+  padding: 14px 32px;
   font-size: 15px;
   line-height: 20px;
   background-color: #FFFFFF;
+}
+@media (max-width: 1023px) {
+  .btn--third {
+    padding: 12px 24px;
+    font-size: 13px;
+    line-height: 16px;
+  }
 }
 .btn--fourth {
   color: #1E222E;
@@ -462,6 +502,12 @@ a {
 .btn--fifth {
   color: #1E222E;
   background-color: transparent;
+}
+@media (max-width: 1023px) {
+  .btn--fifth {
+    padding: 0;
+    font-size: 14px;
+  }
 }
 .btn--sixth {
   padding: 12px;
@@ -475,14 +521,16 @@ a {
 .hero--partners .hero__heading {
   margin: 0 0 48px 0;
 }
-.hero--partners .hero__btn {
-  width: 258px;
-}
 .hero__wrapper {
   display: flex;
   align-items: center;
   -moz-column-gap: 180px;
        column-gap: 180px;
+}
+@media (max-width: 1023px) {
+  .hero__wrapper {
+    gap: 0;
+  }
 }
 .hero__content {
   padding: 100px 0;
@@ -490,13 +538,22 @@ a {
   flex-direction: column;
   align-items: flex-start;
 }
-.hero__btn {
-  width: 272px;
+@media (max-width: 1023px) {
+  .hero__content {
+    padding: 0;
+  }
 }
 .hero__heading {
   margin: 0 0 24px;
   font-size: 40px;
   line-height: 48px;
+}
+@media (max-width: 1023px) {
+  .hero__heading {
+    margin: 0 0 20px;
+    font-size: 32px;
+    line-height: 38px;
+  }
 }
 .hero__heading-highlight {
   color: #476BF0;
@@ -506,6 +563,12 @@ a {
   font-size: 18px;
   line-height: 24px;
 }
+@media (max-width: 1023px) {
+  .hero__description {
+    margin: 0 0 40px;
+    font-size: 16px;
+  }
+}
 
 .advantages__main-list {
   display: grid;
@@ -514,8 +577,13 @@ a {
   margin: 0 0 100px;
   list-style-type: none;
 }
-.advantages__main-list--grid {
-  grid-template-columns: repeat(2, 1fr);
+@media (max-width: 1023px) {
+  .advantages__main-list {
+    padding: 80px 0 0 0;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin: 0 0 80px;
+  }
 }
 .advantages__main-item--flat {
   grid-column: span 2;
@@ -527,6 +595,12 @@ a {
   margin: 0;
   padding: 0 80px;
   list-style: none;
+}
+@media (max-width: 1023px) {
+  .advantages__list {
+    gap: 24px;
+    padding: 0;
+  }
 }
 .advantages__list-item {
   display: flex;
@@ -543,10 +617,24 @@ a {
   border-radius: 12px;
   background-color: #476BF0;
 }
+@media (max-width: 1023px) {
+  .advantages__list-box {
+    width: 48px;
+    height: 48px;
+    margin: 0 0 15px 0;
+  }
+}
 .advantages__list-heading {
   margin: 0 0 12px 0;
   font-size: 24px;
   line-height: 28px;
+}
+@media (max-width: 1023px) {
+  .advantages__list-heading {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 .advantages__list-description {
   margin: 0;
@@ -554,6 +642,11 @@ a {
   line-height: 20px;
   text-align: center;
   color: #696E82;
+}
+@media (max-width: 1023px) {
+  .advantages__list-description {
+    font-size: 14px;
+  }
 }
 
 .card-advantages {
@@ -564,8 +657,23 @@ a {
   height: 100%;
   border-radius: 16px;
 }
+@media (max-width: 1023px) {
+  .card-advantages {
+    flex-direction: column;
+  }
+}
 .card-advantages--reverse .card-advantages__content {
   padding: 100px 0 100px 140px;
+}
+@media (max-width: 1023px) {
+  .card-advantages--reverse .card-advantages__content {
+    padding: 30px 15px 10px 15px;
+  }
+}
+@media (max-width: 1023px) {
+  .card-advantages--reverse .card-advantages__description {
+    margin: 0;
+  }
 }
 .card-advantages--heavenly {
   background-color: #A8DCFF;
@@ -584,19 +692,13 @@ a {
 .card-advantages--light-gray {
   background-color: #F4F6FA;
 }
-.card-advantages--small {
-  flex-direction: column;
-  grid-column: span 1;
-  min-height: 640px;
-}
-.card-advantages--small .card-advantages__content {
-  padding: 60px;
-}
-.card-advantages--small .card-advantages__picture {
-  margin: auto 0 0 0;
-}
 .card-advantages__picture {
   flex-shrink: 0;
+}
+@media (max-width: 1023px) {
+  .card-advantages__picture {
+    margin: auto 0 0 0;
+  }
 }
 .card-advantages__sublist {
   display: flex;
@@ -615,23 +717,43 @@ a {
   flex-direction: column;
   align-items: flex-start;
 }
+@media (max-width: 1023px) {
+  .card-advantages__content {
+    padding: 10px 15px 30px 15px;
+  }
+}
 .card-advantages__heading {
   margin: 0 0 20px 0;
   font-size: 32px;
   line-height: 36px;
 }
+@media (max-width: 1023px) {
+  .card-advantages__heading {
+    margin: 0 0 10px 0;
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
 .card-advantages__description {
-  margin: 0;
+  margin: 0 0 32px 0;
   font-size: 18px;
   line-height: 24px;
 }
-.card-advantages__btn {
-  width: 224px;
-  margin: 32px 0 0 0;
+@media (max-width: 1023px) {
+  .card-advantages__description {
+    margin: 0 0 30px 0;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .how-pay {
   padding: 100px 0 0 0;
+}
+@media (max-width: 1023px) {
+  .how-pay {
+    padding: 80px 0 0 0;
+  }
 }
 .how-pay__title {
   margin: 0 0 40px 0;
@@ -646,6 +768,12 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+@media (max-width: 1023px) {
+  .how-pay__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 26px;
+  }
 }
 .how-pay__item, .how-pay__content {
   display: flex;

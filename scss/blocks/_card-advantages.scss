@@ -5,9 +5,23 @@
   height: 100%;
   border-radius: 16px;
 
+  @media (max-width: $vp-tablet) {
+    flex-direction: column;
+  }
+
   &--reverse {
     .card-advantages__content {
       padding: 100px 0 100px 140px;
+
+      @media (max-width: $vp-tablet) {
+        padding: 30px 15px 10px 15px;
+      }
+    }
+
+    .card-advantages__description {
+      @media (max-width: $vp-tablet) {
+        margin: 0;
+      }
     }
   }
 
@@ -33,22 +47,12 @@
     background-color: $color-solitude-2;
   }
 
-  &--small {
-    flex-direction: column;
-    grid-column: span 1;
-    min-height: 640px;
-
-    .card-advantages__content {
-      padding: 60px;
-    }
-
-    .card-advantages__picture {
-      margin: auto 0 0 0;
-    }
-  }
-
   &__picture {
     flex-shrink: 0;
+
+    @media (max-width: $vp-tablet) {
+      margin: auto 0 0 0;
+    }
   }
 
   &__sublist {
@@ -69,22 +73,33 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    @media (max-width: $vp-tablet) {
+      padding: 10px 15px 30px 15px;
+    }
   }
 
   &__heading {
     margin: 0 0 20px 0;
     font-size: 32px;
     line-height: 36px;
+
+    @media (max-width: $vp-tablet) {
+      margin: 0 0 10px 0;
+      font-size: 22px;
+      line-height: 28px;
+    }
   }
 
   &__description {
-    margin: 0;
+    margin: 0 0 32px 0;
     font-size: 18px;
     line-height: 24px;
-  }
 
-  &__btn {
-    width: 224px;
-    margin: 32px 0 0 0;
+    @media (max-width: $vp-tablet) {
+      margin: 0 0 30px 0;
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 }

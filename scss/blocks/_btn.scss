@@ -13,18 +13,30 @@
   cursor: pointer;
 
   &--second {
-    padding: 18px;
+    padding: 18px 32px;
     font-size: 15px;
     line-height: 20px;
     background-color: $color-royal-blue-1;
+
+    @media (max-width: $vp-tablet) {
+      padding: 16px 32px;
+      font-size: 13px;
+      line-height: 16px;
+    }
   }
 
   &--third {
     color: $color-black-russian;
-    padding: 14px;
+    padding: 14px 32px;
     font-size: 15px;
     line-height: 20px;
     background-color: $color-white;
+
+    @media (max-width: $vp-tablet) {
+      padding: 12px 24px;
+      font-size: 13px;
+      line-height: 16px;
+    }
   }
 
   &--fourth {
@@ -35,6 +47,11 @@
   &--fifth {
     color: $color-black-russian;
     background-color: transparent;
+
+    @media (max-width: $vp-tablet) {
+      padding: 0;
+      font-size: 14px;
+    }
   }
 
   &--sixth {

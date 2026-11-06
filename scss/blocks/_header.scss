@@ -19,10 +19,25 @@
     border-radius: 12px;
     column-gap: 20px;
     padding: 5px;
+
+    @media (max-width: $vp-tablet) {
+      border: none;
+      margin: 0;
+    }
   }
 
   &__btn {
     width: 128px;
+
+    @media (max-width: $vp-tablet) {
+      width: auto;
+    }
+
+    &--active {
+      @media (max-width: $vp-tablet) {
+        display: none;
+      }
+    }
   }
 
   &__language-link {
@@ -33,5 +48,9 @@
     border: 1px solid $color-hawkes-blue;
     border-radius: 12px;
     padding: 17px 22px 17px 21px;
+
+    @media (max-width: $vp-tablet) {
+      display: none;
+    }
   }
 }
