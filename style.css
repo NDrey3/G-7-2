@@ -761,6 +761,13 @@ a {
   font-size: 32px;
   line-height: 36px;
 }
+@media (max-width: 1023px) {
+  .how-pay__title {
+    margin: 0 0 30px 0;
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
 .how-pay__list {
   display: grid;
   grid-template-columns: repeat(4, 280px);
@@ -775,7 +782,18 @@ a {
     gap: 30px 26px;
   }
 }
-.how-pay__item, .how-pay__content {
+.how-pay__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 1023px) {
+  .how-pay__item {
+    flex-direction: row;
+    gap: 15px;
+  }
+}
+.how-pay__content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -783,8 +801,20 @@ a {
 .how-pay__icon {
   margin: 0 0 20px 0;
 }
+@media (max-width: 1023px) {
+  .how-pay__icon {
+    width: 56px;
+    height: 56px;
+  }
+}
 .how-pay__content {
   align-items: center;
+}
+@media (max-width: 1023px) {
+  .how-pay__content {
+    align-self: start;
+    align-items: start;
+  }
 }
 .how-pay__heading {
   margin: 0 0 12px 0;
@@ -792,15 +822,33 @@ a {
   line-height: 28px;
   text-align: center;
 }
+@media (max-width: 1023px) {
+  .how-pay__heading {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: start;
+  }
+}
 .how-pay__description {
   margin: 0;
   font-size: 15px;
   line-height: 20px;
   color: #696E82;
 }
+@media (max-width: 1023px) {
+  .how-pay__description {
+    font-size: 14px;
+  }
+}
 
 .payment {
   padding: 100px 0;
+}
+@media (max-width: 1023px) {
+  .payment {
+    padding: 80px 0;
+  }
 }
 .payment--partners {
   padding: 0 0 100px;
@@ -812,6 +860,13 @@ a {
   font-size: 32px;
   line-height: 36px;
 }
+@media (max-width: 1023px) {
+  .payment__title {
+    margin: 0 auto 30px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
 .payment__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -820,22 +875,44 @@ a {
   padding: 0;
   list-style: none;
 }
+@media (max-width: 1023px) {
+  .payment__list {
+    gap: 16px;
+  }
+}
 .payment__picture {
   display: block;
   margin: 0 0 20px 0;
   background-color: #F6F6F6;
   border-radius: 16px;
 }
+@media (max-width: 1023px) {
+  .payment__picture {
+    margin: 0 0 15px 0;
+  }
+}
 .payment__heading {
   margin: 0 0 8px 0;
   font-size: 20px;
   line-height: 24px;
+}
+@media (max-width: 1023px) {
+  .payment__heading {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 .payment__description {
   margin: 0;
   font-size: 15px;
   line-height: 20px;
   color: #696E82;
+}
+@media (max-width: 1023px) {
+  .payment__description {
+    font-size: 14px;
+  }
 }
 
 .footer {
