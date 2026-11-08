@@ -18,7 +18,7 @@
     line-height: 20px;
     background-color: $color-royal-blue-1;
 
-    @media (max-width: $vp-tablet) {
+    @include vp-tablet {
       padding: 16px 32px;
       font-size: 13px;
       line-height: 16px;
@@ -32,7 +32,7 @@
     line-height: 20px;
     background-color: $color-white;
 
-    @media (max-width: $vp-tablet) {
+    @include vp-tablet {
       padding: 12px 24px;
       font-size: 13px;
       line-height: 16px;
@@ -48,7 +48,7 @@
     color: $color-black-russian;
     background-color: transparent;
 
-    @media (max-width: $vp-tablet) {
+    @include vp-tablet {
       padding: 0;
       font-size: 14px;
     }

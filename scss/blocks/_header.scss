@@ -20,7 +20,7 @@
     column-gap: 20px;
     padding: 5px;
 
-    @media (max-width: $vp-tablet) {
+    @include vp-tablet {
       border: none;
       margin: 0;
     }
@@ -29,12 +29,12 @@
   &__btn {
     width: 128px;
 
-    @media (max-width: $vp-tablet) {
+    @include vp-tablet {
       width: auto;
     }
 
     &--active {
-      @media (max-width: $vp-tablet) {
+      @include vp-tablet {
         display: none;
       }
     }
@@ -49,7 +49,7 @@
     border-radius: 12px;
     padding: 17px 22px 17px 21px;
 
-    @media (max-width: $vp-tablet) {
+    @include vp-tablet {
       display: none;
     }
   }
