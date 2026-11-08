@@ -6,8 +6,6 @@
       margin: 0 0 48px 0;
     }
 
-    .hero__wrapper {}
-
   }
 
   &__wrapper {
@@ -17,6 +15,17 @@
 
     @include vp-tablet {
       gap: 0;
+    }
+
+    @include vp-mobile {
+      justify-content: center;
+      align-items: start;
+      padding: 40px 0 0 0;
+      min-height: 586px;
+      background-image: url("../../images/clients/terminal-mobile.png");
+      background-repeat: no-repeat;
+    
+      background-position: center bottom;
     }
   }
 
@@ -28,6 +37,10 @@
 
     @include vp-tablet {
       padding: 0;
+    }
+
+    @include vp-mobile {
+      align-items: center;
     }
   }
 
@@ -55,6 +68,12 @@
     @include vp-tablet {
       margin: 0 0 40px;
       font-size: 16px;
+    }
+  }
+
+  &__image {
+    @include vp-mobile {
+      display: none;
     }
   }
 }

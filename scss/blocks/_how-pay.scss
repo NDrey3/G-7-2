@@ -50,6 +50,8 @@
   }
 
   &__icon {
+    display: flex;
+    flex-shrink: 0;
     margin: 0 0 20px 0;
 
     @include vp-tablet {
