@@ -538,6 +538,11 @@ a {
 .hero--partners .hero__heading {
   margin: 0 0 48px 0;
 }
+@media (max-width: 1023px) {
+  .hero--partners .hero__heading {
+    margin: 0 0 40px 0;
+  }
+}
 .hero__wrapper {
   display: flex;
   align-items: center;
@@ -755,6 +760,32 @@ a {
 .card-advantages--reverse .card-advantages__description {
   margin: 0;
 }
+.card-advantages--small {
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 72px;
+}
+@media (max-width: 1023px) {
+  .card-advantages--small {
+    gap: 34px;
+  }
+}
+.card-advantages--small .card-advantages__content {
+  padding: 60px 60px 0;
+}
+@media (max-width: 1023px) {
+  .card-advantages--small .card-advantages__content {
+    padding: 30px 30px 0;
+  }
+}
+.card-advantages--small .card-advantages__image {
+  max-width: 600px;
+}
+@media (max-width: 1023px) {
+  .card-advantages--small .card-advantages__image {
+    max-width: 345px;
+  }
+}
 .card-advantages--heavenly {
   background-color: #A8DCFF;
 }
@@ -764,6 +795,27 @@ a {
 .card-advantages--blue {
   color: #FFFFFF;
   background-color: #5E81FF;
+}
+@media (max-width: 1023px) {
+  .card-advantages--blue {
+    flex-direction: row;
+    gap: 28px;
+  }
+}
+.card-advantages--blue .card-advantages__image {
+  max-width: 340px;
+  height: 300px;
+}
+.card-advantages--blue .card-advantages__content {
+  padding: 10px 140px 10px 0;
+}
+@media (max-width: 1023px) {
+  .card-advantages--blue .card-advantages__content {
+    padding: 10px 40px 10px 0;
+  }
+}
+.card-advantages--blue .card-advantages__description {
+  margin: 0;
 }
 .card-advantages--dark-gray {
   color: #FFFFFF;
@@ -782,8 +834,8 @@ a {
 }
 @media (max-width: 1023px) {
   .card-advantages__image {
-    width: 250px;
-    height: 220px;
+    max-width: 250px;
+    /*height*/
   }
 }
 .card-advantages__sublist {
@@ -793,9 +845,20 @@ a {
   margin: 0;
   padding: 0 0 0 22px;
 }
+@media (max-width: 1023px) {
+  .card-advantages__sublist {
+    gap: 10px;
+  }
+}
 .card-advantages__subitem {
   font-size: 18px;
   line-height: 24px;
+}
+@media (max-width: 1023px) {
+  .card-advantages__subitem {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 .card-advantages__content {
   padding: 100px 140px 100px 0;
@@ -960,6 +1023,11 @@ a {
 }
 .payment--partners {
   padding: 0 0 100px;
+}
+@media (max-width: 1023px) {
+  .payment--partners {
+    padding: 0 0 80px;
+  }
 }
 .payment__title {
   max-width: 520px;

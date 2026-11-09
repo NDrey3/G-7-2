@@ -23,6 +23,32 @@
     }
   }
 
+  &--small {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 72px;
+
+    @include vp-tablet {
+      gap: 34px;
+    }
+
+    .card-advantages__content {
+      padding: 60px 60px 0;
+
+      @include vp-tablet {
+        padding: 30px 30px 0;
+      }
+    }
+
+    .card-advantages__image {
+      max-width: 600px;
+
+      @include vp-tablet {
+        max-width: 345px;
+      }
+    }
+  }
+
   &--heavenly {
     background-color: $color-columbia-blue;
   }
@@ -34,6 +60,28 @@
   &--blue {
     color: $color-white;
     background-color: $color-cornflower-blue;
+
+    @include vp-tablet {
+      flex-direction: row;
+      gap: 28px;
+    }
+
+    .card-advantages__image {
+      max-width: 340px;
+      height: 300px;
+    }
+
+    .card-advantages__content {
+      padding: 10px 140px 10px 0;
+
+      @include vp-tablet {
+        padding: 10px 40px 10px 0;
+      }
+    }
+
+    .card-advantages__description {
+      margin: 0;
+    }
   }
 
   &--dark-gray {
@@ -55,8 +103,8 @@
 
   &__image {
     @include vp-tablet {
-      width: 250px;
-      height: 220px;
+      max-width: 250px;
+      /*height*/
     }
   }
 
@@ -66,11 +114,20 @@
     row-gap: 16px;
     margin: 0;
     padding: 0 0 0 22px;
+
+    @include vp-tablet {
+      gap: 10px;
+    }
   }
 
   &__subitem {
     font-size: 18px;
     line-height: 24px;
+
+    @include vp-tablet {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 
   &__content {

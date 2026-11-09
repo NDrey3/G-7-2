@@ -11,6 +11,10 @@
 
   &--partners {
     padding: 0 0 100px;
+
+    @include vp-tablet {
+      padding: 0 0 80px;
+    }
   }
 
   &__title {
