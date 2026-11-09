@@ -4,6 +4,10 @@
   padding: 0;
   list-style: none;
 
+  @include vp-mobile {
+    display: none;
+  }
+
   &__link {
     display: flex;
     justify-content: center;

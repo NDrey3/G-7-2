@@ -14,14 +14,12 @@
       padding: 100px 0 100px 140px;
 
       @include vp-tablet {
-        padding: 30px 15px 10px 15px;
+        padding: 30px 15px 20px 15px;
       }
     }
 
     .card-advantages__description {
-      @include vp-tablet {
-        margin: 0;
-      }
+      margin: 0;
     }
   }
 
@@ -55,6 +53,13 @@
     }
   }
 
+  &__image {
+    @include vp-tablet {
+      width: 250px;
+      height: 220px;
+    }
+  }
+
   &__sublist {
     display: flex;
     flex-direction: column;
@@ -76,6 +81,7 @@
 
     @include vp-tablet {
       padding: 10px 15px 30px 15px;
+      align-items: center;
     }
   }
 
@@ -88,6 +94,7 @@
       margin: 0 0 10px 0;
       font-size: 22px;
       line-height: 28px;
+      width: 100%;
     }
   }
 

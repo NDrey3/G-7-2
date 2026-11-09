@@ -2,6 +2,10 @@
   padding: 40px 0;
   background-color: $color-solitude-2;
 
+  @include vp-mobile {
+    padding: 30px 0;
+  }
+
   &__wrapper {
     display: grid;
     grid-template-columns: 191px 340px 1fr;
@@ -12,17 +16,37 @@
       grid-template-columns: 1fr 1fr;
       column-gap: 0;
     }
+
+    @include vp-mobile {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
   }
 
   &__left {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    @include vp-mobile {
+      align-items: center;
+    }
   }
 
   &__logo-link {
     display: flex;
     margin: 0 0 40px;
+
+    @include vp-mobile {
+      margin: 0 0 24px;
+    }
+  }
+
+  &__logo-image {
+    @include vp-mobile {
+      width: 98px;
+      height: 42px;
+    }
   }
 
   &__contacts,
@@ -35,21 +59,40 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    @include vp-mobile {
+      align-items: center;
+      ;
+    }
   }
 
   &__contacts {
     row-gap: 16px;
     margin: 0 0 24px;
+
+    @include vp-mobile {
+      gap: 20px;
+      margin: 0 0 20px;
+    }
   }
 
   &__phone {
     row-gap: 2px;
+
+    @include vp-mobile {
+      gap: 5px;
+    }
   }
 
   &__phone-link {
     font-size: 20px;
     line-height: 28px;
     font-weight: 600;
+
+    @include vp-mobile {
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
 
   &__phone-text,
@@ -61,11 +104,19 @@
     font-size: 13px;
     line-height: 16px;
     color: $color-storm-grey-2;
+
+    @include vp-mobile {
+      font-size: 12px;
+    }
   }
 
   &__feedback {
     row-gap: 12px;
     margin: 0 0 24px;
+
+    @include vp-mobile {
+      margin: 0 0 20px;
+    }
   }
 
   &__feedback-btn {
@@ -74,6 +125,10 @@
 
   &__location {
     row-gap: 8px;
+
+    @include vp-mobile {
+      gap: 5px;
+    }
   }
 
   &__location-link {
@@ -110,24 +165,44 @@
     @include vp-tablet {
       padding: 20px 0 0 0;
     }
+
+    @include vp-mobile {
+      padding: 40px 0 0 0;
+    }
   }
 
   &__policy {
     row-gap: 12px;
     margin: 0 0 32px;
+
+    @include vp-mobile {
+      display: none;
+    }
   }
 
   &__socials {
     margin: 0 0 32px;
+
+    @include vp-mobile {
+      display: none;
+    }
   }
 
   &__copyright {
     row-gap: 12px;
     margin: 0 0 20px;
+
+    @include vp-mobile {
+      gap: 10px;
+    }
   }
 
   &__copyright-text {
     margin: 0;
+
+    @include vp-mobile {
+      text-align: center;
+    }
   }
 
   &__copyright-date {

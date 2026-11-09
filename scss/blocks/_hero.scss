@@ -24,8 +24,11 @@
       min-height: 586px;
       background-image: url("../../images/clients/terminal-mobile.png");
       background-repeat: no-repeat;
-    
       background-position: center bottom;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../images/clients/terminal-mobile@2x.png");
+      }
     }
   }
 
@@ -54,6 +57,10 @@
       font-size: 32px;
       line-height: 38px;
     }
+
+    @include vp-mobile {
+      text-align: center;
+    }
   }
 
   &__heading-highlight {
@@ -69,9 +76,20 @@
       margin: 0 0 40px;
       font-size: 16px;
     }
+
+    @include vp-mobile {
+      text-align: center;
+    }
   }
 
   &__image {
+    max-width: 660px;
+
+    @include vp-tablet {
+      max-width: 420px;
+      height: 410px;
+    }
+
     @include vp-mobile {
       display: none;
     }

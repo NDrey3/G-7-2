@@ -5,6 +5,10 @@
     padding: 80px 0;
   }
 
+  @include vp-mobile {
+    padding: 60px 0;
+  }
+
   &--partners {
     padding: 0 0 100px;
   }
@@ -17,6 +21,7 @@
     line-height: 36px;
 
     @include vp-tablet {
+      max-width: 100%;
       margin: 0 auto 30px;
       font-size: 22px;
       line-height: 28px;
@@ -33,6 +38,11 @@
 
     @include vp-tablet {
       gap: 16px;
+    }
+
+    @include vp-mobile {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px 15px;
     }
   }
 
