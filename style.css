@@ -535,6 +535,17 @@ a {
 .hero {
   background-color: #F4F6FA;
 }
+@media (max-width: 767px) {
+  .hero--partners .hero__wrapper {
+    min-height: 518px;
+    background-image: url("../../images/partners/switch-gpay-mobile.png");
+  }
+}
+@media (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero--partners .hero__wrapper {
+    background-image: url("../../images/partners/switch-gpay-mobile@2x.png");
+  }
+}
 .hero--partners .hero__heading {
   margin: 0 0 48px 0;
 }
@@ -546,8 +557,9 @@ a {
 .hero__wrapper {
   display: flex;
   align-items: center;
-  -moz-column-gap: 180px;
-       column-gap: 180px;
+  justify-content: space-between;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
 @media (max-width: 1023px) {
   .hero__wrapper {
@@ -571,7 +583,8 @@ a {
   }
 }
 .hero__content {
-  padding: 100px 0;
+  padding: 10px 0;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -662,6 +675,11 @@ a {
 }
 .advantages__main-item--flat {
   grid-column: span 2;
+}
+@media (max-width: 767px) {
+  .advantages__main-item--flat {
+    grid-column: auto;
+  }
 }
 .advantages__list {
   display: grid;
@@ -802,9 +820,21 @@ a {
     gap: 28px;
   }
 }
+@media (max-width: 767px) {
+  .card-advantages--blue {
+    flex-direction: column;
+    gap: 0;
+  }
+}
 .card-advantages--blue .card-advantages__image {
   max-width: 340px;
   height: 300px;
+}
+@media (max-width: 767px) {
+  .card-advantages--blue .card-advantages__image {
+    max-width: 345px;
+    height: 190px;
+  }
 }
 .card-advantages--blue .card-advantages__content {
   padding: 10px 140px 10px 0;
@@ -812,6 +842,11 @@ a {
 @media (max-width: 1023px) {
   .card-advantages--blue .card-advantages__content {
     padding: 10px 40px 10px 0;
+  }
+}
+@media (max-width: 767px) {
+  .card-advantages--blue .card-advantages__content {
+    padding: 30px 30px 34px 30px;
   }
 }
 .card-advantages--blue .card-advantages__description {
@@ -823,6 +858,11 @@ a {
 }
 .card-advantages--light-gray {
   background-color: #F4F6FA;
+}
+@media (max-width: 767px) {
+  .card-advantages--light-gray {
+    min-height: 408px;
+  }
 }
 .card-advantages__picture {
   flex-shrink: 0;
@@ -1027,6 +1067,11 @@ a {
 @media (max-width: 1023px) {
   .payment--partners {
     padding: 0 0 80px;
+  }
+}
+@media (max-width: 767px) {
+  .payment--partners {
+    padding: 0 0 60px;
   }
 }
 .payment__title {

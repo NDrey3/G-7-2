@@ -2,6 +2,17 @@
   background-color: $color-solitude-2;
 
   &--partners {
+    .hero__wrapper {
+      @include vp-mobile {
+        min-height: 518px;
+        background-image: url("../../images/partners/switch-gpay-mobile.png");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../../images/partners/switch-gpay-mobile@2x.png");
+        }
+      }
+    }
+
     .hero__heading {
       margin: 0 0 48px 0;
 
@@ -14,7 +25,8 @@
   &__wrapper {
     display: flex;
     align-items: center;
-    column-gap: 180px;
+    justify-content: space-between;
+    column-gap: 10px;
 
     @include vp-tablet {
       gap: 0;
@@ -36,7 +48,8 @@
   }
 
   &__content {
-    padding: 100px 0;
+    padding: 10px 0;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

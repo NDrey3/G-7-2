@@ -25,6 +25,10 @@
   &__main-item {
     &--flat {
       grid-column: span 2;
+
+      @include vp-mobile {
+        grid-column: auto;
+      }
     }
   }
 

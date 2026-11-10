@@ -66,9 +66,19 @@
       gap: 28px;
     }
 
+    @include vp-mobile {
+      flex-direction: column;
+      gap: 0;
+    }
+
     .card-advantages__image {
       max-width: 340px;
       height: 300px;
+
+      @include vp-mobile {
+        max-width: 345px;
+        height: 190px;
+      }
     }
 
     .card-advantages__content {
@@ -76,6 +86,10 @@
 
       @include vp-tablet {
         padding: 10px 40px 10px 0;
+      }
+
+      @include vp-mobile {
+        padding: 30px 30px 34px 30px;
       }
     }
 
@@ -91,6 +105,10 @@
 
   &--light-gray {
     background-color: $color-solitude-2;
+
+    @include vp-mobile {
+      min-height: 408px;
+    }
   }
 
   &__picture {
