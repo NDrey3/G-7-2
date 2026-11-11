@@ -23,6 +23,11 @@
       font-size: 13px;
       line-height: 16px;
     }
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-free-speech-blue;
+    }
   }
 
   &--third {
@@ -36,6 +41,11 @@
       padding: 12px 24px;
       font-size: 13px;
       line-height: 16px;
+    }
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-solitude-4;
     }
   }
 
@@ -52,11 +62,33 @@
       padding: 0;
       font-size: 14px;
     }
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-solitude-4;
+    }
   }
 
   &--sixth {
     padding: 12px;
     font-size: 13px;
     line-height: 16px;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-blue-zodiac;
+    }
+
+    &:disabled {
+      background-color: $color-white-smoke-2;
+      color: $color-manatee-2;
+      cursor: none;
+    }
+  }
+
+  &--disabled {
+    background-color: $color-white-smoke-2;
+    color: $color-manatee-2;
+    cursor: none;
   }
 }

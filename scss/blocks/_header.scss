@@ -64,5 +64,15 @@
     @include vp-tablet {
       display: none;
     }
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-hawkes-blue;
+    }
+
+    &--disabled {
+      background-color: $color-white-smoke-2;
+      color: $color-manatee-2;
+    }
   }
 }
